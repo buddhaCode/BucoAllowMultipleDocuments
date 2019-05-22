@@ -1,0 +1,25 @@
+<?xml version="1.0" ?>
+
+<container xmlns="http://symfony.com/schema/dic/services"
+           xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+           xsi:schemaLocation="http://symfony.com/schema/dic/services http://symfony.com/schema/dic/services/services-1.0.xsd">
+
+    <services>
+
+        <service class="BucoAllowMultipleDocuments\Subscriber\Document" id="buco_allow_multiple_documents.subscriber.document">
+            <argument id="shopware.plugin.cached_config_reader" type="service"/>
+            <argument type="service" id="models"/>
+            <argument>%buco_allow_multiple_documents.plugin_name%</argument>
+            <tag name="shopware.event_subscriber"/>
+        </service>
+
+        <service id="buco_allow_multiple_documents.subscriber.template" class="BucoAllowMultipleDocuments\Subscriber\Template">
+            <argument>%buco_allow_multiple_documents.plugin_dir%</argument>
+            <argument>%buco_allow_multiple_documents.plugin_name%</argument>
+            <tag name="shopware.event_subscriber" />
+            <argument type="service" id="models"/>
+            <argument type="service" id="shopware.plugin.cached_config_reader"/>
+        </service>
+
+    </services>
+</container>

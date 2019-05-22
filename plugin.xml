@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<plugin xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="../../../engine/Shopware/Components/Plugin/schema/plugin.xsd">
+    <label>Order Documents: Allow multiple documents per type</label>
+    <label lang="de">Bestelldokumente: Erlaube mehrere Dokumente pro Typ</label>
+    <version>1.0.0</version>
+    <license>MIT</license>
+    <link>https://github.com/buddhaCode/BucoAllowMultipleDocuments</link>
+    <author>buddhaCode</author>
+    <description>
+        <![CDATA[
+            <p>Shopware doesn't allow to create more than one document per type for a customer order. For example, one will
+            create a second delivery slip, the first one will be overwritten. This plugins enables Shopware to create more
+            than one document for a designated document type. The plugin settings allow to enable this feature on a sub-shop
+            and document type basis.</p>
+        ]]>
+    </description>
+    <description lang="de">
+        <![CDATA[
+            <p>Shopware erlaubt es nicht, mehrere Dokumente vom selben Typ für eine Bestellung zu erzeugen. Will man beispielsweise
+             einen zweiten Lieferschein erzeugen, wird dabei ein bereits ersteller Lieferschein überschrieben. Dieses
+             Plugin erlaubt es mehrere Dokumente eines bestimmten Dokumententypes pro Bestellung zu erstellen. In den
+             Plugin Einstellungen lässt sich festlegen für welche Dokumententypen dies erlaubt sein soll. Diese Einstellung
+             ist subshop-spezifisch.</p>
+        ]]>
+    </description>
+    <compatibility minVersion="5.5.0" />
+    <changelog version="1.0.0">
+        <changes>Initial release</changes>
+        <changes lang="de">Erstveröffentlichung</changes>
+    </changelog>
+</plugin>

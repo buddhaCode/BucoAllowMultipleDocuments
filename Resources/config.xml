@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+        xsi:noNamespaceSchemaLocation="../../../../engine/Shopware/Components/Plugin/schema/config.xsd">
+    <elements>
+
+        <element type="combo" scope="shop">
+            <name>docTypeIds</name>
+            <label>Allow multiple documents for types</label>
+            <label lang="de">Erlaube mehrere Dokumente für Belege</label>
+            <description>&lt;p&gt;This option is &lt;b&gt;shop specific&lt;/b&gt;. In contrast to text fields, &lt;b&gt;sub-shops will not automatically inherit this option&lt;/b&gt; form the main-shop. It needs to be set for every sub-shop on it&apos;s own.&lt;/p&gt;&lt;p&gt;Changing this option will only take effect, after &lt;b&gt;flushing the template cache and reloading the backend&lt;/b&gt;!!!&lt;/p&gt;</description>
+            <description lang="de">&lt;p&gt;Diese Option ist &lt;b&gt;shop-spezifisch&lt;/b&gt;. Anders als bei Textfeldern, &lt;b&gt;erben&lt;/b&gt; die Sub-Shops diese Option &lt;b&gt;nicht&lt;/b&gt; automatisch vom Haupt-Shop. Diese Einstellung muss also f&#252;r jeden Sub-Shop gesondert vorhenommen werden.&lt;/p&gt;&lt;p&gt;&#196;nderungen an diesen Einstellungen treten erst in Kraft, nachdem der &lt;b&gt;Template Cache geleert und das Backend neu geladen&lt;/b&gt; wurde!!!&lt;/p&gt;</description>
+            <store>Shopware.apps.Base.store.DocType</store>
+            <options>
+                <multiSelect>true</multiSelect>
+            </options>
+        </element>
+
+ </elements>
+</config>
